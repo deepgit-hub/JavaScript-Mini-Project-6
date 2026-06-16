@@ -115,3 +115,7 @@ function clearform()
     eligible.textContent="Elegibility Status "
     dresult.textContent=""
 }
+function admissionsummary()
+{
+
+}
