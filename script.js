@@ -15,6 +15,7 @@ function iseligible(event)
         if(Number(mark.value)>=420 && ( ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
             eligible.textContent="Elegibility Status : You're Eligible for Computer Science"
+            dresult.textContent=""
             
         }
         else if(Number(mark.value)<420 && Number(mark.value)>=380 && (ss.value=="Bio-Maths" || ss.value=="Computer Science"))
