@@ -35,7 +35,7 @@ function iseligible(event)
         else if(Number(mark.value)<=350)
         {
             eligible.textContent="Elegibility Status : You're not Eligible"
-            dresult.textContent=""
+            dresult.textContent="Suggested Department : Commerce with Computer Application"
         }
     }
 }
