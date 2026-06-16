@@ -91,6 +91,20 @@ function iseligible(event)
             dresult.textContent="Suggested Department : Commerce with Computer Application"
         }
     }
+      else if(ds.value=="Commerce with Computer Application")
+    {
+        if(Number(markinput.value)>=250)
+        {
+            eligiblestatus.textContent="Eligibility Status : Admission Rejected"
+            dresult.textContent="" 
+            admission.innerHTML = "<button onclick=admissionsummary()>Admission Summary</button>"
+            department="Commerce with Computer Application"
+        }
+        else 
+        {
+            eligiblestatus.textContent="Elegibility Status : You're Eligible not eligible to get admission in this college"
+        }
+    }
 }
 function clearform()
 {
