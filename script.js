@@ -12,28 +12,28 @@ function iseligible(event)
     event.preventDefault()
     if(ds.value=="Computer Science")
     {
-        if(Number(mark.value)>=420 && ( ss.value=="Bio-Maths" || ss.value=="Computer Science"))
+        if(Number(markinput.value)>=420 && ( ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
             eligible.textContent="Elegibility Status : You're Eligible for Computer Science"
             dresult.textContent=""
             
         }
-        else if(Number(mark.value)<420 && Number(mark.value)>=380 && (ss.value=="Bio-Maths" || ss.value=="Computer Science"))
+        else if(Number(markinput.value)<420 && Number(markinput.value)>=380 && (ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
             eligible.textContent="Elegibility Status : You're not Eligible"
             dresult.textContent="Suggested Department : Computer Application"
         }
-         else if(Number(mark.value)<380 && Number(mark.value)>350 && (ss.value=="Bio-Maths" || ss.value=="Computer Science"))
+         else if(Number(markinput.value)<380 && Number(markinput.value)>350 && (ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
             eligible.textContent="Elegibility Status : You're not Eligible "
             dresult.textContent="Suggested Department : Mathametics with Computer Application"
         }
-        else if(Number(mark.value)>350 && (ss.value!="Bio-Maths" && ss.value!="Computer Science"))
+        else if(Number(markinput.value)>350 && (ss.value!="Bio-Maths" && ss.value!="Computer Science"))
         {
             eligible.textContent="Elegibility Status : You're not Eligible  "
             dresult.textContent="Suggested Department : Commerce with Computer Application"
         }
-        else if(Number(mark.value)<=350)
+        else if(Number(markinput.value)<=350)
         {
             eligible.textContent="Elegibility Status : You're not Eligible"
             dresult.textContent="Suggested Department : Commerce with Computer Application"
