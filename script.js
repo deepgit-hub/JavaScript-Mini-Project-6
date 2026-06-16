@@ -7,6 +7,14 @@ var ds = document.getElementById("desired-stream")
 var result = document.getElementById("result")
 var eligible = document.getElementById("eligible")
 var dresult = document.getElementById("department-result")
+var admission = document.getElementById("admission")
+var department = ""
+var aname = document.getElementById("aname")
+var afname = document.getElementById("afname")
+var aage = document.getElementById("aage")
+var ass = document.getElementById("ass")
+var add = document.getElementById("add")
+var aad = document.getElementById("aad
 function iseligible(event)
 {
     event.preventDefault()
