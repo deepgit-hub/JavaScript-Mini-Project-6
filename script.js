@@ -77,6 +77,8 @@ function iseligible(event)
         {
             eligible.textContent="Elegibility Status : You're Eligible for Mathametics with Computer Application "
             dresult.textContent=""   
+             admission.innerHTML = "<button onclick=admissionsummary()>Admission Summary</button>"
+            department="Mathametics with Computer Application"
         }
         else if(Number(markinput.value)>=300 && (ss.value!="Bio-Maths" && ss.value!="Computer Science"))
         {
