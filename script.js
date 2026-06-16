@@ -39,6 +39,26 @@ function iseligible(event)
             dresult.textContent="Suggested Department : Commerce with Computer Application"
         }
     }
+    
+    else if(ds.value=="Computer Application")
+    {
+         if(Number(markinput.value)>=360 && ( ss.value=="Bio-Maths" || ss.value=="Computer Science"))
+        {
+            eligible.textContent="Elegibility Status : You're Eligible for Computer Application"
+            dresult.textContent=""   
+        }
+          else if(Number(markinput.value)<360 &&  (ss.value=="Bio-Maths" || ss.value=="Computer Science"))
+        {
+            eligible.textContent="Elegibility Status : You're not Eligible"
+            dresult.textContent="Suggested Department : Mathametics with Computer Application"
+        }
+         else if(Number(markinput.value)>=360 && (ss.value!="Bio-Maths" && ss.value!="Computer Science"))
+        {
+            eligible.textContent="Elegibility Status : You're not Eligible  "
+            dresult.textContent="Suggested Department : Commerce with Computer Application"
+        }
+
+    }
 }
 function clearform()
 {
