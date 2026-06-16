@@ -40,3 +40,12 @@ function iseligible(event)
         }
     }
 }
+function clearform()
+{
+    nameinput.value=""
+    fnameinput.value=""
+    ageinput.value=""
+    markinput.value=""
+    eligible.textContent="Elegibility Status "
+    dresult.textContent=""
+}
