@@ -13,3 +13,12 @@ Generate admission summary
 Display semester fee information
 Simple and user-friendly interface
 Form reset functionality
+🏫 Departments Available
+Computer Science
+Computer Application
+Mathematics with Computer Application
+Commerce with Computer Application
+📋 Admission Rules
+Computer Science
+Eligible if marks are 420 or above and stream is Bio-Maths or Computer Science
+Otherwise recommended to other suitable departments
