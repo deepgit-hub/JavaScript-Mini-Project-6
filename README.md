@@ -9,6 +9,8 @@ This project helps students quickly check whether they are eligible for a desire
 The application also generates an admission summary containing student details, admitted department, and semester fee information.
 
 ---
+🌐 Live Demo : 
+---
 
 ## ✨ Features
 
