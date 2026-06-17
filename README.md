@@ -32,3 +32,27 @@ Eligible if marks are 250 or above
 HTML5
 CSS3
 JavaScript
+🚀 How to Use
+Enter student details
+Select school stream
+Select desired department
+Click Check Eligibility
+View eligibility result
+If eligible, click Generate Admission Summary
+View admission details and semester fee information
+📷 Project Preview
+
+This project demonstrates how admission eligibility, department recommendations, and fee information can be automated using JavaScript.
+
+🎯 Future Improvements
+Database integration
+Student login system
+PDF admission receipt generation
+Online application submission
+Admin dashboard
+Email notifications
+👨‍💻 Developed By
+
+Deepak
+
+Frontend Development Project built as part of my JavaScript learning journey.
