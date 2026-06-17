@@ -13,3 +13,27 @@ body{
     min-height: 100vh;
     padding: 40px 20px;
 }
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: white;
+}
+
+table{
+    width: 700px;
+    border-collapse: collapse;
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th{
+    width: 40%;
+    background-color: #334155;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
