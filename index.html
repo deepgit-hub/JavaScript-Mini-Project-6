@@ -5,32 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DBCY Admission</title>
     <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <center>
-    <h1>
-        DBCY Admission
-    </h1>
-    
+    <h1>🎓 DBCY Admission Portal</h1>
     <form>
     <table>
         <tr>
            <th> Name </th>
        
-   <td> <input id="name-input" type="text" placeholder="name"></td>
+   <td> <input id="name-input" type="text" placeholder="Name"></td>
      </tr>
         <tr>
             <th>Father Name </th>
-            <td><input id="fname-input" type="text" placeholder="father name"></td>
+            <td><input id="fname-input" type="text" placeholder="Father name"></td>
         </tr>
         <tr>
             <th>Age </th>
             <td><input id="age-input" type="number" placeholder="Age"></td>
         </tr>
-          <tr>
+        <tr>
             <th>12th Mark </th>
             <td><input id="mark-input" type="number" placeholder="12th Mark"></td>
         </tr>
@@ -56,24 +53,29 @@
                 </select>
                 </td>
         </tr>
-    
     </table>
-         <br>
+    <br>
     <button onclick="iseligible(event)">Check Eligibility</button>
+    <br><br><button onclick="clearform()" type="button">Clear Form</button>
     </form>
-        <div id="result">
+    <div id="result">
         <h1 id="eligible">Elegibility Status </h1>
-            <p id="department-result"></p>
+        <p id="department-result"></p>
     </div>
-          <div id="admission">
-        <h2 id="aname">Name : </h2>
-        <h2 id="afname">Father Name : </h2>
-        <h2 id="aage">Age : </h2>
-        <h2 id="ass">School Stream : </h2>
-        <h2 id="add">Desired Department : </h2>
-        <h2 id="aad">Admitted Department : </h2>
-    </div>
-        </center>
+    <button id="summary-btn" onclick="admissionsummary()" style="display:none">
+ Generate Admission Summary
+</button> 
+    
+    <div id="admission">
+    <h2 id="aname">Name : </h2>
+    <h2 id="afname">Father Name : </h2>
+    <h2 id="aage">Age : </h2>
+    <h2 id="ass">School Stream : </h2>
+    <h2 id="add">Desired Department : </h2>
+    <h2 id="aad">Admitted Department : </h2>
+    <h2 id="semfee">Semester Fee : </h2>
+</div>
+    </center>
     <script src="script.js"></script>
 </body>
 </html>
