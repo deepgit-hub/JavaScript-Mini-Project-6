@@ -9,7 +9,7 @@ This project helps students quickly check whether they are eligible for a desire
 The application also generates an admission summary containing student details, admitted department, and semester fee information.
 
 ---
-🌐 Live Demo : 
+🌐 Live Demo : https://deepgit-hub.github.io/JavaScript-Mini-Project-6/
 ---
 
 ## ✨ Features
