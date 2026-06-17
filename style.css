@@ -119,5 +119,35 @@ button:hover{
     margin-bottom: 14px;
     color: white;
 }
+@media(max-width:768px){
 
+    h1{
+        font-size: 36px;
+    }
+
+    table,
+    #result,
+    #admission{
+        width: 95%;
+    }
+
+    th,
+    td{
+        display: block;
+        width: 100%;
+    }
+
+    th{
+        text-align: left;
+        padding: 15px;
+    }
+
+    td{
+        padding: 10px 15px;
+    }
+
+    button{
+        width: 90%;
+    }
+}
 
