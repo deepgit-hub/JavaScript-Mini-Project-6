@@ -22,3 +22,13 @@ Commerce with Computer Application
 Computer Science
 Eligible if marks are 420 or above and stream is Bio-Maths or Computer Science
 Otherwise recommended to other suitable departments
+Computer Application
+Eligible if marks are 360 or above and stream is Bio-Maths or Computer Science
+Mathematics with Computer Application
+Eligible if marks are 300 or above and stream is Bio-Maths or Computer Science
+Commerce with Computer Application
+Eligible if marks are 250 or above
+🛠️ Tech Stack
+HTML5
+CSS3
+JavaScript
