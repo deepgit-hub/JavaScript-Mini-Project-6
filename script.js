@@ -5,7 +5,7 @@ var markinput = document.getElementById("mark-input")
 var ss = document.getElementById("school-stream")
 var ds = document.getElementById("desired-stream")
 var result = document.getElementById("result")
-var eligible = document.getElementById("eligible")
+var eligiblestatus = document.getElementById("eligible")
 var dresult = document.getElementById("department-result")
 var admission = document.getElementById("admission")
 var department = ""
@@ -14,7 +14,9 @@ var afname = document.getElementById("afname")
 var aage = document.getElementById("aage")
 var ass = document.getElementById("ass")
 var add = document.getElementById("add")
-var aad = document.getElementById("aad
+var aad = document.getElementById("aad")
+var semfee = 0
+var sem = document.getElementById("semfee")
 function iseligible(event)
 {
     event.preventDefault()
@@ -22,52 +24,60 @@ function iseligible(event)
     {
         if(Number(markinput.value)>=420 && ( ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
-            eligible.textContent="Elegibility Status : You're Eligible for Computer Science"
+            eligiblestatus.textContent="Elegibility Status : You're Eligible for Computer Science"
             dresult.textContent=""
-             admission.innerHTML = "<button onclick=admissionsummary()>Admission Summary</button>"
+            document.getElementById("summary-btn").style.display="block"
             department="Computer Science"
-            
+            semfee = 20000
+
         }
         else if(Number(markinput.value)<420 && Number(markinput.value)>=380 && (ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
-            eligible.textContent="Elegibility Status : You're not Eligible"
+            eligiblestatus.textContent="Elegibility Status : You're not Eligible"
             dresult.textContent="Suggested Department : Computer Application"
+            document.getElementById("summary-btn").style.display="none"
         }
          else if(Number(markinput.value)<380 && Number(markinput.value)>350 && (ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
-            eligible.textContent="Elegibility Status : You're not Eligible "
+            eligiblestatus.textContent="Elegibility Status : You're not Eligible "
             dresult.textContent="Suggested Department : Mathametics with Computer Application"
+            document.getElementById("summary-btn").style.display="none"
         }
         else if(Number(markinput.value)>350 && (ss.value!="Bio-Maths" && ss.value!="Computer Science"))
         {
-            eligible.textContent="Elegibility Status : You're not Eligible  "
+            eligiblestatus.textContent="Elegibility Status : You're not Eligible  "
             dresult.textContent="Suggested Department : Commerce with Computer Application"
+            document.getElementById("summary-btn").style.display="none"
         }
         else if(Number(markinput.value)<=350)
         {
-            eligible.textContent="Elegibility Status : You're not Eligible"
+            eligiblestatus.textContent="Elegibility Status : You're not Eligible"
             dresult.textContent="Suggested Department : Commerce with Computer Application"
+            document.getElementById("summary-btn").style.display="none"
         }
+
     }
-    
     else if(ds.value=="Computer Application")
     {
-         if(Number(markinput.value)>=360 && ( ss.value=="Bio-Maths" || ss.value=="Computer Science"))
+        if(Number(markinput.value)>=360 && ( ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
-            eligible.textContent="Elegibility Status : You're Eligible for Computer Application"
+            eligiblestatus.textContent="Elegibility Status : You're Eligible for Computer Application"
             dresult.textContent=""   
-            admission.innerHTML = "<button onclick=admissionsummary()>Admission Summary</button>"
+           document.getElementById("summary-btn").style.display="block"
             department="Computer Application"
+            semfee=18000
         }
           else if(Number(markinput.value)<360 &&  (ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
-            eligible.textContent="Elegibility Status : You're not Eligible"
+            eligiblestatus.textContent="Elegibility Status : You're not Eligible"
             dresult.textContent="Suggested Department : Mathametics with Computer Application"
+            document.getElementById("summary-btn").style.display="none"
         }
          else if(Number(markinput.value)>=360 && (ss.value!="Bio-Maths" && ss.value!="Computer Science"))
         {
-            eligible.textContent="Elegibility Status : You're not Eligible  "
+            eligiblestatus.textContent="Elegibility Status : You're not Eligible  "
             dresult.textContent="Suggested Department : Commerce with Computer Application"
+            document.getElementById("summary-btn").style.display="none"
         }
 
     }
@@ -75,45 +85,53 @@ function iseligible(event)
     {
         if(Number(markinput.value)>=300 && ( ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
-            eligible.textContent="Elegibility Status : You're Eligible for Mathametics with Computer Application "
+            eligiblestatus.textContent="Elegibility Status : You're Eligible for Mathametics with Computer Application "
             dresult.textContent=""   
-             admission.innerHTML = "<button onclick=admissionsummary()>Admission Summary</button>"
+            document.getElementById("summary-btn").style.display="block"  
             department="Mathametics with Computer Application"
+            semfee=14000
         }
         else if(Number(markinput.value)>=300 && (ss.value!="Bio-Maths" && ss.value!="Computer Science"))
         {
-            eligible.textContent="Elegibility Status : You're not Eligible  "
+            eligiblestatus.textContent="Elegibility Status : You're not Eligible  "
             dresult.textContent="Suggested Department : Commerce with Computer Application"
+            document.getElementById("summary-btn").style.display="none"
         }
         else if(Number(markinput.value)<300 && ( ss.value=="Bio-Maths" || ss.value=="Computer Science"))
         {
-            eligible.textContent="Elegibility Status : You're not Eligible  "
+            eligiblestatus.textContent="Elegibility Status : You're not Eligible  "
             dresult.textContent="Suggested Department : Commerce with Computer Application"
+            document.getElementById("summary-btn").style.display="none"
         }
     }
-      else if(ds.value=="Commerce with Computer Application")
+    else if(ds.value=="Commerce with Computer Application")
     {
         if(Number(markinput.value)>=250)
         {
-            eligiblestatus.textContent="Eligibility Status : Admission Rejected"
+           eligiblestatus.textContent="Eligibility Status : You're Eligible for Commerce with Computer Application"
             dresult.textContent="" 
-            admission.innerHTML = "<button onclick=admissionsummary()>Admission Summary</button>"
+            document.getElementById("summary-btn").style.display="block"
             department="Commerce with Computer Application"
+            semfee=12500
         }
         else 
         {
-            eligiblestatus.textContent="Elegibility Status : You're Eligible not eligible to get admission in this college"
+            eligiblestatus.textContent="Elegibility Status : You're not eligible to get admission in this college"
+            document.getElementById("summary-btn").style.display="none"
         }
     }
 }
+
 function clearform()
 {
     nameinput.value=""
     fnameinput.value=""
     ageinput.value=""
     markinput.value=""
-    eligible.textContent="Elegibility Status "
+    eligiblestatus.textContent="Elegibility Status "
     dresult.textContent=""
+    document.getElementById("summary-btn").style.display="none"
+    admission.style.display="none"
 }
 function admissionsummary()
 {
