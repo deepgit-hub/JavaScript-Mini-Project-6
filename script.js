@@ -117,5 +117,12 @@ function clearform()
 }
 function admissionsummary()
 {
-
+    admission.style.display="block"
+    aname.textContent="Name : "+nameinput.value
+    afname.textContent="Father Name : "+fnameinput.value
+    aage.textContent="Age: "+ageinput.value
+    ass.textContent="School Stream: "+ss.value
+    add.textContent="Desired Department : "+ds.value
+    aad.textContent="Admitted Department  : "+department
+    sem.textContent ="Semester Fee : ₹"+semfee
 }
