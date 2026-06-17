@@ -93,4 +93,31 @@ button:hover{
     margin-bottom: 10px;
 }
 
+#department-result{
+    font-size: 18px;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+#summary-btn{
+    margin-top: 25px;
+}
+
+#admission{
+    display: none;
+    width: 700px;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #1e293b;
+    border-radius: 12px;
+    text-align: left;
+}
+
+#admission h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: white;
+}
+
 
