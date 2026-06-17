@@ -19,6 +19,7 @@ var semfee = 0
 var sem = document.getElementById("semfee")
 function iseligible(event)
 {
+
     event.preventDefault()
     if(ds.value=="Computer Science")
     {
