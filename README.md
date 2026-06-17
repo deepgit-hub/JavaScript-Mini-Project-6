@@ -5,3 +5,11 @@ The College Admission Eligibility & Fee Prediction System is a web-based applica
 
 This project helps students quickly check whether they are eligible for a desired department based on their academic background and marks. If a student is not eligible, the system recommends an alternative department and displays relevant admission information.
 The application also generates an admission summary containing student details, admitted department, and semester fee information.
+Features
+Check eligibility for different college departments
+Suggest alternative departments when eligibility requirements are not met
+Display admission status instantly
+Generate admission summary
+Display semester fee information
+Simple and user-friendly interface
+Form reset functionality
